@@ -1,0 +1,406 @@
+1) Посмотреть где я 
+$ pwd
+/c/Users/user
+2) Создать папку
+$ mkdir group_23
+mkdir: cannot create directory ‘group_23’: File exists
+3) Зайти в папку
+user@DESKTOP-UUPP9C7 MINGW64 ~
+$ cd group_23/
+4) Создать 3 папки
+user@DESKTOP-UUPP9C7 MINGW64 ~/group_23
+$ mkdir {test_A,test_B,test_C}
+5) Зайти в любоую папку
+user@DESKTOP-UUPP9C7 MINGW64 ~/group_23
+$ cd test_A/
+6) Создать 5 файлов (3 txt, 2 json)
+user@DESKTOP-UUPP9C7 MINGW64 ~/group_23/test_A
+$ touch test{1,2,3}.txt test{4,5}.json
+7) Создать 3 папки
+user@DESKTOP-UUPP9C7 MINGW64 ~/group_23/test_A
+$ mkdir {group1,group2,group3}
+8. Вывести список содержимого папки
+user@DESKTOP-UUPP9C7 MINGW64 ~/group_23/test_A
+$ ls -la
+total 8
+drwxr-xr-x 1 user 197121 0 Oct  1 15:28 ./
+drwxr-xr-x 1 user 197121 0 Oct  1 15:04 ../
+drwxr-xr-x 1 user 197121 0 Oct  1 15:28 group1/
+drwxr-xr-x 1 user 197121 0 Oct  1 15:28 group2/
+drwxr-xr-x 1 user 197121 0 Oct  1 15:28 group3/
+-rw-r--r-- 1 user 197121 0 Oct  1 15:25 test1.txt
+-rw-r--r-- 1 user 197121 0 Oct  1 15:25 test2.txt
+-rw-r--r-- 1 user 197121 0 Oct  1 15:25 test3.txt
+-rw-r--r-- 1 user 197121 0 Oct  1 15:25 test4.json
+-rw-r--r-- 1 user 197121 0 Oct  1 15:25 test5.json
+9) + Открыть любой txt файл
+user@DESKTOP-UUPP9C7 MINGW64 ~/group_23/test_A
+$ vim test1.txt
+При открытии:
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+test1.txt [unix] (15:25 01/10/2021)                                                         0,0-1 All
+"test1.txt" 0L, 0B
+
+
+
+10) + написать туда что-нибудь, любой текст.
+1-  набираем i и переходим в режим редактирования -- INSERT --
+2-  вводим текст  
+1)Зима
+2)Весна
+3)Лето
+4)Осень
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+test1.txt[+] [unix] (15:25 01/10/2021)                                                     4,13-8 All
+-- INSERT --
+11) + сохранить и выйти.
+- нажатие клавиши Esc; ввод команды :wq
+1)Зима
+2)Весна
+3)Лето
+4)Осень
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+test1.txt[+] [unix] (15:25 01/10/2021)                                                     4,11-7 All
+:wq
+
+12) Выйти из папки на уровень выше
+user@DESKTOP-UUPP9C7 MINGW64 ~/group_23/test_A
+$ cd ..
+13) переместить любые 2 файла, которые вы создали, в любую другую папку.
+проверка места нахождения
+user@DESKTOP-UUPP9C7 MINGW64 ~/group_23
+$ pwd
+/c/Users/user/group_23
+1)Перемещение test1.txt из test_A в group1
+user@DESKTOP-UUPP9C7 MINGW64 ~/group_23
+$ mv /c/Users/user/group_23/test_A/test1.txt /c/Users/user/group_23/test_A/group1/test1.txt	
+
+user@DESKTOP-UUPP9C7 MINGW64 ~/group_23
+$ mv /c/Users/user/group_23/test_A/test4.json /c/Users/user/group_23/test_A/group1/test4.json
+
+2)Другой пример перемещения test5.json из test_A в test_B : 
+user@DESKTOP-UUPP9C7 MINGW64 ~/group_23
+$ mv ./test_A/test5.json ./test_B/test5.json
+
+проверяем
+заходим в папку:
+user@DESKTOP-UUPP9C7 MINGW64 ~/group_23
+$ cd test_A/
+
+user@DESKTOP-UUPP9C7 MINGW64 ~/group_23/test_A
+$ ls -la
+total 8
+drwxr-xr-x 1 user 197121 0 Oct  1 17:28 ./
+drwxr-xr-x 1 user 197121 0 Oct  1 15:04 ../
+drwxr-xr-x 1 user 197121 0 Oct  1 17:13 group1/
+drwxr-xr-x 1 user 197121 0 Oct  1 15:28 group2/
+drwxr-xr-x 1 user 197121 0 Oct  1 15:28 group3/
+-rw-r--r-- 1 user 197121 0 Oct  1 15:25 test2.txt
+-rw-r--r-- 1 user 197121 0 Oct  1 15:25 test3.txt
+
+user@DESKTOP-UUPP9C7 MINGW64 ~/group_23/test_A
+
+или открываем проводник и смотрим
+user@DESKTOP-UUPP9C7 MINGW64 ~/group_23/test_A
+$ start .
+
+3)Пример перемещение папок group2 в group3
+user@DESKTOP-UUPP9C7 MINGW64 ~/group_23/test_A
+$ mv group2 group3
+4)Перемещение сразу двух файлов (test2.txt,test3.txt) в папку group3
+user@DESKTOP-UUPP9C7 MINGW64 ~/group_23/test_A
+$ mv ./{test2.txt,test3.txt} ./group3/
+5)Перемещение папки с файлами group3 в папку group1 :
+user@DESKTOP-UUPP9C7 MINGW64 ~/group_23/test_A
+$ mv -v ./group3 ./group1/
+renamed './group3' -> './group1/group3'
+
+переходим в group1
+user@DESKTOP-UUPP9C7 MINGW64 ~/group_23/test_A
+$ cd group1
+
+проверяем
+user@DESKTOP-UUPP9C7 MINGW64 ~/group_23/test_A/group1
+$ ls -la
+total 5
+drwxr-xr-x 1 user 197121  0 Oct  1 18:32 ./
+drwxr-xr-x 1 user 197121  0 Oct  1 18:36 ../
+drwxr-xr-x 1 user 197121  0 Oct  1 18:20 group3/
+-rw-r--r-- 1 user 197121 48 Oct  1 15:51 test1.txt
+-rw-r--r-- 1 user 197121  0 Oct  1 15:25 test4.json
+
+14) скопировать любые 2 файла, которые вы создали, в любую другую папку.
+копирование одного файла test1.txt в group3 из папки в которой нахожусь: 
+user@DESKTOP-UUPP9C7 MINGW64 ~/group_23/test_A/group1
+$ cp ./test1.txt ./group3/
+создаем еще файлы test6.txt,test7.txt:
+user@DESKTOP-UUPP9C7 MINGW64 ~/group_23/test_A/group1
+$ touch test{6,7}.txt
+
+копирование нескольких файлов test6.txt,test7.txt из group1 в group3 :
+user@DESKTOP-UUPP9C7 MINGW64 ~/group_23/test_A/group1
+$ cp ./{test6.txt,test7.txt} ./group3/
+
+проверка:
+user@DESKTOP-UUPP9C7 MINGW64 ~/group_23/test_A/group1
+$ cd group3
+
+user@DESKTOP-UUPP9C7 MINGW64 ~/group_23/test_A/group1/group3
+$ ls -la
+total 1
+drwxr-xr-x 1 user 197121  0 Oct  1 18:47 ./
+drwxr-xr-x 1 user 197121  0 Oct  1 18:43 ../
+drwxr-xr-x 1 user 197121  0 Oct  1 15:28 group2/
+-rw-r--r-- 1 user 197121 48 Oct  1 18:40 test1.txt
+-rw-r--r-- 1 user 197121  0 Oct  1 18:08 test2.txt
+-rw-r--r-- 1 user 197121  0 Oct  1 18:08 test3.txt
+-rw-r--r-- 1 user 197121  0 Oct  1 18:47 test6.txt
+-rw-r--r-- 1 user 197121  0 Oct  1 18:47 test7.txt
+
+user@DESKTOP-UUPP9C7 MINGW64 ~/group_23/test_A/group1/group3
+
+15) Найти файл по имени 
+
+вернулись в group_23
+user@DESKTOP-UUPP9C7 MINGW64 ~
+$ cd group_23/
+посмотреть все файлы в указанной дериктории test_A:
+user@DESKTOP-UUPP9C7 MINGW64 ~/group_23
+$ find ./test_A
+./test_A
+./test_A/1.txt
+./test_A/group1
+./test_A/group1/group3
+./test_A/group1/group3/group2
+./test_A/group1/group3/test1.txt
+./test_A/group1/group3/test2.txt
+./test_A/group1/group3/test3.txt
+./test_A/group1/group3/test6.txt
+./test_A/group1/group3/test7.txt
+./test_A/group1/test1.txt
+./test_A/group1/test4.json
+./test_A/group1/test6.txt
+./test_A/group1/test7.txt
+
+Находим файл по имени test1.txt:
+user@DESKTOP-UUPP9C7 MINGW64 ~/group_23
+$ find . -name "test1.txt"
+./test_A/group1/group3/test1.txt
+./test_A/group1/test1.txt
+./Новая папка/group1/test1.txt
+
+
+16) просмотреть содержимое в реальном времени (команда grep) изучите как она работает.
+Поиск слова Весна в текстовом документе test1.txt :
+user@DESKTOP-UUPP9C7 MINGW64 ~/group_23/test_A/group1
+$ cat test1.txt | grep Весна
+2)Весна
+Другой способ
+$ grep Весна test1.txt
+2)Весна
+Сколько раз слово Весна повторяется в документе test1.txt
+user@DESKTOP-UUPP9C7 MINGW64 ~/group_23/test_A/group1
+$ grep -c Весна test1.txt
+1
+
+17) вывести несколько первых строк из текстового файла
+Выведем 3 первые строки из текстового файла test1.txt
+user@DESKTOP-UUPP9C7 MINGW64 ~/group_23/test_A/group1
+$ head -3 test1.txt
+1)Зима
+2)Весна
+3)Лето
+
+18) вывести несколько последних строк из текстового файла
+выведем последнюю строку и текстового файла test1.txt
+user@DESKTOP-UUPP9C7 MINGW64 ~/group_23/test_A/group1
+$ tail -1 test1.txt
+4)Осень
+
+19) просмотреть содержимое длинного файла (команда less) изучите как она работает.
+user@DESKTOP-UUPP9C7 MINGW64 ~/group_23/test_A
+$ less ./group1/test1.txt
+Вывести на экране 
+user@DESKTOP-UUPP9C7 MINGW64 ~/group_23/test_A/group1
+$ less -X test1.txt
+1)Зима
+2)Весна
+3)Лето
+4)Осень
+test1.txt (END)
+что бы выйти нажать q
+20) вывести дату и время
+user@DESKTOP-UUPP9C7 MINGW64 ~/group_23/test_A/group1
+$ date
+Sat Oct  2 15:14:30     2021
+=========
+
+Задание *
+20) Отправить http запрос на сервер. http://162.55.220.72:5005/terminal-hw-request
+1) 
+  curl "http://162.55.220.72:5005/get_method?name=(ALIAKSEI)&age=(27)"
+
+$ curl "http://162.55.220.72:5005/get_method?name=(ALIAKSEI)&age=(27)"
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100    22  100    22    0     0    212      0 --:--:-- --:--:-- --:--:--   213["(ALIAKSEI)","(27)"]
+
+2)curl [options] [URL...]
+Вот параметры, которые мы будем использовать при отправке запросов:
+-X, –request- метод HTTP, который будет использоваться.
+-i, –include- Включить заголовки ответа.
+-d, –data- Данные, которые должны быть отправлены.
+-H, –header- Дополнительный заголовок для отправки.
+curl -X GET http://162.55.220.72:5005/terminal-hw-request -H "Content-Type: application/json" \    -d '{"name":"ALIAKSEI"," surname": "SHYKULA"}' 
+
+user@DESKTOP-UUPP9C7 MINGW64 ~/group_23/test_A/group1
+$ curl -X GET http://162.55.220.72:5005/terminal-hw-request -H "Content-Type: application/json" \ -d '{"name":"ALIAKSEI"," surname": "SHYKULA"}'
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100   237  100   237    0     0   2465      0 --:--:-- --:--:-- --:--:--  2494{"Intro":"Hello!! This is your the first response from server","Tasks":{"Task_1":"Send the next URL in terminal: http://162.55.220.72:5005/get_method?name=(set_your_String)&age=(set_your_number)","result":["Your_String","Your_number"]}}
+--_curl_--"name":"ALIAKSEI"
+--_curl_--" surname": "SHYKULA"
+
+curl: (3) URL using bad/illegal format or missing URL
+
+[1/2]: "name":"ALIAKSEI" --> <stdout>
+curl: (3) URL using bad/illegal format or missing URL
+
+[2/2]: " surname": "SHYKULA" --> <stdout>
+curl: (3) URL using bad/illegal format or missing URL
+
+21) Написать скрипт который выполнит автоматически пункты 3, 4, 5, 6, 7, 8, 13
+можно через :
+user@DESKTOP-UUPP9C7 MINGW64 ~/group_23/test_A/group1
+$ nano script.sh
+
+
+#!/bin/bash
+echo "Hello"
+cd test_A/
+mkdir {test_D,test_E,test_F}
+cd test_D/
+touch file{1,2,3}.txt file{4,5}.json
+mkdir {box1,box2,box3}
+ls -la
+mv ./{file5.json,file4.json} ./box1/
+cd box1/
+ls -la 
+echo "Goodbye"
+
+q – выход
+
+bash script.sh
+
+./script.sh
+
+user@DESKTOP-UUPP9C7 MINGW64 ~/group_23
+$ ./script.sh
+Hello
+mkdir: cannot create directory ‘test_D’: File exists
+mkdir: cannot create directory ‘test_E’: File exists
+mkdir: cannot create directory ‘test_F’: File exists
+mkdir: cannot create directory ‘box1’: File exists
+mkdir: cannot create directory ‘box2’: File exists
+mkdir: cannot create directory ‘box3’: File exists
+total 8
+drwxr-xr-x 1 user 197121 0 Oct  2 19:08 .
+drwxr-xr-x 1 user 197121 0 Oct  2 18:38 ..
+drwxr-xr-x 1 user 197121 0 Oct  2 19:07 box1
+drwxr-xr-x 1 user 197121 0 Oct  2 18:52 box2
+drwxr-xr-x 1 user 197121 0 Oct  2 18:52 box3
+-rw-r--r-- 1 user 197121 0 Oct  2 19:08 file1.txt
+-rw-r--r-- 1 user 197121 0 Oct  2 19:08 file2.txt
+-rw-r--r-- 1 user 197121 0 Oct  2 19:08 file3.txt
+-rw-r--r-- 1 user 197121 0 Oct  2 19:08 file4.json
+-rw-r--r-- 1 user 197121 0 Oct  2 19:08 file5.json
+total 4
+drwxr-xr-x 1 user 197121 0 Oct  2 19:08 .
+drwxr-xr-x 1 user 197121 0 Oct  2 19:08 ..
+-rw-r--r-- 1 user 197121 0 Oct  2 19:08 file4.json
+-rw-r--r-- 1 user 197121 0 Oct  2 19:08 file5.json
+Goodbye
