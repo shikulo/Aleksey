@@ -4,4 +4,12 @@
 	<animals>one cat</animals>
 	<desired salary>1500$</desired salary>
 </me>
+<favorite>
+	<film>Пролетая над гнездом кукушки</film>
+	<tvseries>Как я встретил вашу маму</tvseries>
+	<food>Тар тар из говядины</food>
+	<season>Лето</season>
+	<country>Австралия</country>
+</favorite>
 
+		
