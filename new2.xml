@@ -1,8 +1,9 @@
+<biography>
 <me>
 	<name>Шикуло А.В.</name>
 	<age>27</age>
 	<animals>one cat</animals>
-	<desired salary>1500$</desired salary>
+	<DesiredSalary>1500$</DesiredSalary>
 </me>
 <favorite>
 	<film>Пролетая над гнездом кукушки</film>
@@ -11,5 +12,5 @@
 	<season>Лето</season>
 	<country>Австралия</country>
 </favorite>
-
+</biography>
 		
