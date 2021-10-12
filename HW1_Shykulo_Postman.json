@@ -104,7 +104,34 @@
 					"request": {
 						"method": "GET",
 						"header": [],
-						"url": null
+						"url": {
+							"raw": "http://162.55.220.72:5005/object_info_1?name=Alex&age=27&weight=80",
+							"protocol": "http",
+							"host": [
+								"162",
+								"55",
+								"220",
+								"72"
+							],
+							"port": "5005",
+							"path": [
+								"object_info_1"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "Alex"
+								},
+								{
+									"key": "age",
+									"value": "27"
+								},
+								{
+									"key": "weight",
+									"value": "80"
+								}
+							]
+						}
 					},
 					"response": []
 				},
