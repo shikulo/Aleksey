@@ -1,0 +1,341 @@
+user@DESKTOP-UUPP9C7 MINGW64 ~
+$ pwd
+/c/Users/user
+
+user@DESKTOP-UUPP9C7 MINGW64 ~
+$ mkdir Git
+
+user@DESKTOP-UUPP9C7 MINGW64 ~
+$ cd Git
+
+user@DESKTOP-UUPP9C7 MINGW64 ~/Git
+$ git clone https://github.com/shikulo/First.git
+Cloning into 'First'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (3/3), done.
+
+user@DESKTOP-UUPP9C7 MINGW64 ~/Git
+
+$ cd first
+
+1)Создать файл “new.json”
+user@DESKTOP-UUPP9C7 MINGW64 ~/Git/first (main)
+$ touch new.json
+
+user@DESKTOP-UUPP9C7 MINGW64 ~/Git/first (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        new.json
+
+nothing added to commit but untracked files present (use "git add" to track)
+2)Добавить файл под гит
+user@DESKTOP-UUPP9C7 MINGW64 ~/Git/first (main)
+$ git add .
+3)Закоммитить файл.
+user@DESKTOP-UUPP9C7 MINGW64 ~/Git/first (main)
+$ git commit -m "new.json 1"
+[main 0891842] new.json 1
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 new.json
+4)Отправить файл на внешний GitHub репозиторий
+
+user@DESKTOP-UUPP9C7 MINGW64 ~/Git/first (main)
+$ git push
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 273 bytes | 273.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/shikulo/First.git
+   2346187..0891842  main -> main
+5)Создать файлы new2.json, new2.xml, new2.txt
+
+user@DESKTOP-UUPP9C7 MINGW64 ~/Git/first (main)
+$ touch new2.json new2.txt new2.xml
+
+6) Добавить файы под гит.
+user@DESKTOP-UUPP9C7 MINGW64 ~/Git/first (main)
+$ git add .
+
+user@DESKTOP-UUPP9C7 MINGW64 ~/Git/first (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   new2.json
+        new file:   new2.txt
+        new file:   new2.xml
+
+7)Закоммитить файлы.
+
+user@DESKTOP-UUPP9C7 MINGW64 ~/Git/first (main)
+$ git commit -m "new2"
+[main b4fb258] new2
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 new2.json
+ create mode 100644 new2.txt
+ create mode 100644 new2.xml
+8)Отправить файлы на внешний GitHub репозиторий.
+
+user@DESKTOP-UUPP9C7 MINGW64 ~/Git/first (main)
+$ git push
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 274 bytes | 274.00 KiB/s, done.
+Total 2 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/shikulo/First.git
+   0891842..b4fb258  main -> main
+9) Отредактировать содержание файла “new2.txt” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата).
+Шикуло А.В.
+27
+кот один
+желаемая зарплата: от 1500$ (кота кормить надо)
+
+user@DESKTOP-UUPP9C7 MINGW64 ~/Git/first (main)
+$ vim new2.txt
+
+10) Отредактировать содержание файла “new2.json” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате JSON.
+{ "name":"Шикуло А.В.",
+	"age":27,
+	"cat":1,
+	"desired salary":1500 $}
+
+user@DESKTOP-UUPP9C7 MINGW64 ~/Git/first (main)
+$ vim new2.json
+
+11) Добавить и закоммитить “new2.txt” одной строчкой. 
+user@DESKTOP-UUPP9C7 MINGW64 ~/Git/first (main)
+$ git add new2.txt && git commit -m "new2"
+warning: LF will be replaced by CRLF in new2.txt.
+The file will have its original line endings in your working directory
+[main f410de2] new2
+ 1 file changed, 4 insertions(+)
+
+user@DESKTOP-UUPP9C7 MINGW64 ~/Git/first (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   new2.json
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+12) Добавить и закоммитить “new2.json” одной строчкой. 
+
+
+user@DESKTOP-UUPP9C7 MINGW64 ~/Git/first (main)
+$ git add new2.json && git commit -m "new2"
+warning: LF will be replaced by CRLF in new2.json.
+The file will have its original line endings in your working directory
+[main 4e63547] new2
+ 1 file changed, 6 insertions(+)
+
+user@DESKTOP-UUPP9C7 MINGW64 ~/Git/first (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 2 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+13) Отправить изменения на внешний репозиторий.
+
+user@DESKTOP-UUPP9C7 MINGW64 ~/Git/first (main)
+$ git push
+Enumerating objects: 9, done.
+Counting objects: 100% (8/8), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (6/6), 690 bytes | 690.00 KiB/s, done.
+Total 6 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), done.
+To https://github.com/shikulo/First.git
+   b4fb258..4e63547  main -> main
+
+14) Отредактировать содержание файла “new2.xml” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате XML.
+<me>
+	<name>Шикуло А.В.</name>
+	<age>27</age>
+	<animals>one cat</animals>
+	<desired salary>1500$</desired salary>
+</me>
+
+
+user@DESKTOP-UUPP9C7 MINGW64 ~/Git/first (main)
+$ vim new2.xml
+
+15) Добавить и закоммитить “new2.xml” одной строчкой. 
+user@DESKTOP-UUPP9C7 MINGW64 ~/Git/first (main)
+$ git add new2.xml && git commit -m "new2.xml"
+warning: LF will be replaced by CRLF in new2.xml.
+The file will have its original line endings in your working directory
+[main 4544955] new2.xml
+ 1 file changed, 7 insertions(+)
+
+16) Отправить изменения на внешний репозиторий.
+user@DESKTOP-UUPP9C7 MINGW64 ~/Git/first (main)
+$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 348 bytes | 348.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/shikulo/First.git
+   4e63547..4544955  main -> main
+
+17) Отправить предыдущее домашнее задание по GitBush Terminal на внешний репозиторий.
+
+user@DESKTOP-UUPP9C7 MINGW64 ~/Git/first (main)
+$ pwd
+/c/Users/user/Git/first
+
+user@DESKTOP-UUPP9C7 MINGW64 ~/Git/first (main)
+$ cd ..
+
+user@DESKTOP-UUPP9C7 MINGW64 ~/Git
+$ cd ..
+
+user@DESKTOP-UUPP9C7 MINGW64 ~
+$ mv ./DZ1Alex.txt ./Git/first
+
+user@DESKTOP-UUPP9C7 MINGW64 ~
+$ cd Git
+
+user@DESKTOP-UUPP9C7 MINGW64 ~/Git
+$ cd first
+
+user@DESKTOP-UUPP9C7 MINGW64 ~/Git/first (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        DZ1Alex.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+user@DESKTOP-UUPP9C7 MINGW64 ~/Git/first (main)
+$ git add .
+
+user@DESKTOP-UUPP9C7 MINGW64 ~/Git/first (main)
+$ git commit -m "Homework1"
+[main ed19aa0] Homework1
+ 1 file changed, 406 insertions(+)
+ create mode 100644 DZ1Alex.txt
+
+user@DESKTOP-UUPP9C7 MINGW64 ~/Git/first (main)
+$ git push
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 3.29 KiB | 3.29 MiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/shikulo/First.git
+   4544955..ed19aa0  main -> main
+18) В веб интерфейсе GitHub создать файл new3.txt: +
+19) Отредактировать в веб интерфейсе содержание файла “new3.txt” - написать информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить).
+Любимый фильм - "Пролетая над гнездом кукушки"
+Любимый сериал - "Как я встретил вашу маму"
+Любимая еда - "Тартар из говядины"
+Любимое время года - "лето"
+Сторона - "Юг",Страна которую хотел бы посетить - "Австралия"
+
+20) Сделать Commit changes (сохранить) изменения на веб интерфейсе: +
+ 21) Синхронизировать внешний и локальный репозитории (слить изменения с внешнего репозитория) 
+
+
+
+
+
+user@DESKTOP-UUPP9C7 MINGW64 ~/Git/first (main)
+$ git pull
+remote: Enumerating objects: 7, done.
+remote: Counting objects: 100% (7/7), done.
+remote: Compressing objects: 100% (5/5), done.
+remote: Total 6 (delta 2), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (6/6), 1.42 KiB | 60.00 KiB/s, done.
+From https://github.com/shikulo/First
+   ed19aa0..f9966cc  main       -> origin/main
+Updating ed19aa0..f9966cc
+Fast-forward
+ new3.txt | 5 +++++
+ 1 file changed, 5 insertions(+)
+ create mode 100644 new3.txt
+22) Отредактировать в веб интерфейсе содержание файла “new2.json” - добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить). Всё в формате JSON.
+{ "name":"Шикуло А.В.",
+	"age":27,
+	"cat":1,
+	"desired salary":1500 $}
+{ "film":"Пролетая над гнездом кукушки",
+ "TV series":"Как я встретил вашу маму",
+ "food":"тартар",
+ "country":"Австралия"}
+23) Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+ 24) Синхронизировать внешний и локальный репозитории 
+
+user@DESKTOP-UUPP9C7 MINGW64 ~/Git/first (main)
+$ git pull
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), 837 bytes | 46.00 KiB/s, done.
+From https://github.com/shikulo/First
+   f9966cc..8457e76  main       -> origin/main
+Updating f9966cc..8457e76
+Fast-forward
+ new2.json | 5 ++++-
+ 1 file changed, 4 insertions(+), 1 deletion(-)
+
+25) Отредактировать в веб интерфейсе содержание файла “new2.xml” - добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить). Всё в формате XML.
+<me>
+	<name>Шикуло А.В.</name>
+	<age>27</age>
+	<animals>one cat</animals>
+	<desired salary>1500$</desired salary>
+</me>
+<favorite>
+	<film>Пролетая над гнездом кукушки</film>
+	<tvseries>Как я встретил вашу маму</tvseries>
+	<food>Тар тар из говядины</food>
+	<season>Лето</season>
+	<country>Австралия</country>
+</favorite>
+
+26) Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+ 27) Синхронизировать внешний и локальный репозитории
+
+user@DESKTOP-UUPP9C7 MINGW64 ~/Git/first (main)
+$ git pull
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), 903 bytes | 45.00 KiB/s, done.
+From https://github.com/shikulo/First
+   8457e76..168f81d  main       -> origin/main
+Updating 8457e76..168f81d
+Fast-forward
+ new2.xml | 8 ++++++++
+ 1 file changed, 8 insertions(+)
+

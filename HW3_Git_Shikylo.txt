@@ -1,0 +1,284 @@
+user@DESKTOP-UUPP9C7 MINGW64 ~
+$ pwd
+/c/Users/user
+
+user@DESKTOP-UUPP9C7 MINGW64 ~
+$ cd git
+
+user@DESKTOP-UUPP9C7 MINGW64 ~/git
+$ cd first
+
+1) На локальном репозитории сделать ветки для:
+- Postman
+- Jmeter
+- CheckLists
+- Bag Reports
+- SQL
+- Charles
+- Mobile testing
+
+user@DESKTOP-UUPP9C7 MINGW64 ~/git/first (main)
+$ git branch Postman
+
+user@DESKTOP-UUPP9C7 MINGW64 ~/git/first (main)
+$ git branch Jmeter
+
+user@DESKTOP-UUPP9C7 MINGW64 ~/git/first (main)
+$ git branch CheckLists
+
+user@DESKTOP-UUPP9C7 MINGW64 ~/git/first (main)
+$ git branch Bag Reports
+fatal: Not a valid object name: 'Reports'.
+
+user@DESKTOP-UUPP9C7 MINGW64 ~/git/first (main)
+$ git branch BagReports
+
+user@DESKTOP-UUPP9C7 MINGW64 ~/git/first (main)
+$ git branch SQL
+
+user@DESKTOP-UUPP9C7 MINGW64 ~/git/first (main)
+$ git branch Charles
+
+user@DESKTOP-UUPP9C7 MINGW64 ~/git/first (main)
+$ git branch Mobile testing
+fatal: Not a valid object name: 'testing'.
+
+user@DESKTOP-UUPP9C7 MINGW64 ~/git/first (main)
+$ git branch MobileTesting
+
+user@DESKTOP-UUPP9C7 MINGW64 ~/git/first (main)
+$ git branch
+  BagReports
+  Charles
+  CheckLists
+  Jmeter
+  MobileTesting
+  Postman
+  SQL
+* main
+2) Запушить все ветки на внешний репозиторий
+
+user@DESKTOP-UUPP9C7 MINGW64 ~/git/first (main)
+$ git push origin Charles CheckLists Jmeter MobileTesting Postman SQL
+Enumerating objects: 37, done.
+Counting objects: 100% (37/37), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (32/32), done.
+Writing objects: 100% (37/37), 8.37 KiB | 2.09 MiB/s, done.
+Total 37 (delta 13), reused 3 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (13/13), done.
+To https://github.com/shikulo/First.git
+ * [new branch]      Charles -> Charles
+ * [new branch]      CheckLists -> CheckLists
+ * [new branch]      Jmeter -> Jmeter
+ * [new branch]      MobileTesting -> MobileTesting
+ * [new branch]      Postman -> Postman
+ * [new branch]      SQL -> SQL
+
+
+user@DESKTOP-UUPP9C7 MINGW64 ~/git/first (main)
+$ git push origin BagReports
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'BagReports' on GitHub by visiting:
+remote:      https://github.com/shikulo/First/pull/new/BagReports
+remote:
+To https://github.com/shikulo/First.git
+ * [new branch]      BagReports -> BagReports
+
+3) В ветке Bag Reports сделать текстовый документ со структурой баг репорта
+Bug_id:
+Title:
+Severity:
+Environment:
+Precondition:
+1)
+2)
+...
+STR:
+1.
+2.
+3.
+...
+AR:
+ER:
+Attachments:
+~
+
+
+user@DESKTOP-UUPP9C7 MINGW64 ~/git/first (main)
+$ git checkout BagReports
+Switched to branch 'BagReports'
+
+user@DESKTOP-UUPP9C7 MINGW64 ~/git/first (BagReports)
+$ git branch
+* BagReports
+  Charles
+  CheckLists
+  Jmeter
+  MobileTesting
+  Postman
+  SQL
+  Main
+
+user@DESKTOP-UUPP9C7 MINGW64 ~/git/first (BagReports)
+$ touch structureBR.txt
+
+user@DESKTOP-UUPP9C7 MINGW64 ~/git/first (BagReports)
+$ git add .
+
+user@DESKTOP-UUPP9C7 MINGW64 ~/git/first (BagReports)
+$ git commit -m "structureNEW"
+[BagReports 3860aec] structureNEW
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 structureBR.txt
+
+user@DESKTOP-UUPP9C7 MINGW64 ~/git/first (BagReports)
+$ git status
+On branch BagReports
+nothing to commit, working tree clean
+
+user@DESKTOP-UUPP9C7 MINGW64 ~/git/first (BagReports)
+$ vim structureBR.txt
+
+4)Запушить структуру багрепорта на внешний репозиторий
+
+user@DESKTOP-UUPP9C7 MINGW64 ~/git/first (BagReports)
+$ git add .
+warning: LF will be replaced by CRLF in structureBR.txt.
+The file will have its original line endings in your working directory
+
+user@DESKTOP-UUPP9C7 MINGW64 ~/git/first (BagReports)
+$ git commit -m "structureVim1"
+[BagReports 5881c35] structureVim1
+ 1 file changed, 16 insertions(+)
+
+user@DESKTOP-UUPP9C7 MINGW64 ~/git/first (BagReports)
+$ git pull origin BagReports
+From https://github.com/shikulo/First
+ * branch            BagReports -> FETCH_HEAD
+Already up to date.
+
+user@DESKTOP-UUPP9C7 MINGW64 ~/git/first (BagReports)
+$ git push -u origin BagReports
+Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (7/7), done.
+Writing objects: 100% (7/7), 784 bytes | 784.00 KiB/s, done.
+Total 7 (delta 3), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (3/3), completed with 1 local object.
+To https://github.com/shikulo/First.git
+   96c2b2a..c553744  BagReports -> BagReports
+Branch 'BagReports' set up to track remote branch 'BagReports' from 'origin'.
+
+5) Вмержить ветку Bag Reports в Main
+user@DESKTOP-UUPP9C7 MINGW64 ~/git/first (BagReports)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+user@DESKTOP-UUPP9C7 MINGW64 ~/git/first (main)
+$ git branch
+  BagReports
+  Charles
+  CheckLists
+  Jmeter
+  MobileTesting
+  Postman
+  SQL
+* main
+
+user@DESKTOP-UUPP9C7 MINGW64 ~/git/first (main)
+$ git merge BagReports
+Merge made by the 'recursive' strategy.
+ structureBR.txt | 16 ++++++++++++++++
+ 1 file changed, 16 insertions(+)
+ create mode 100644 structureBR.txt
+
+6)Запушить main на внешний репозиторий.
+
+user@DESKTOP-UUPP9C7 MINGW64 ~/git/first (main)
+$ git push -u origin main
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 312 bytes | 312.00 KiB/s, done.
+Total 2 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/shikulo/First.git
+   cafd97f..8d2a3e4  main -> main
+Branch 'main' set up to track remote branch 'main' from 'origin'.
+
+7) В ветке CheckLists набросать структуру чек листа.
+
+user@DESKTOP-UUPP9C7 MINGW64 ~/git/first (main)
+$ git checkout CheckLists
+Switched to branch 'CheckLists'
+
+user@DESKTOP-UUPP9C7 MINGW64 ~/git/first (CheckLists)
+$ touch structureChL.txt
+
+user@DESKTOP-UUPP9C7 MINGW64 ~/git/first (CheckLists)
+$ vim structureChL.txt
+
+8) Запушить структуру на внешний репозиторий
+
+user@DESKTOP-UUPP9C7 MINGW64 ~/git/first (CheckLists)
+$ git status
+On branch CheckLists
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        structureChL.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+user@DESKTOP-UUPP9C7 MINGW64 ~/git/first (CheckLists)
+$ git add .
+warning: LF will be replaced by CRLF in structureChL.txt.
+The file will have its original line endings in your working directory
+
+user@DESKTOP-UUPP9C7 MINGW64 ~/git/first (CheckLists)
+$ git commit -m "CheckListsStructure"
+[CheckLists 53e3484] CheckListsStructure
+ 1 file changed, 6 insertions(+)
+ create mode 100644 structureChL.txt
+
+user@DESKTOP-UUPP9C7 MINGW64 ~/git/first (CheckLists)
+$ git push -u origin CheckLists
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 382 bytes | 382.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/shikulo/First.git
+   d56fd3a..53e3484  CheckLists -> CheckLists
+Branch 'CheckLists' set up to track remote branch 'CheckLists' from 'origin'.
+
+9) На внешнем репозитории сделать Pull Request ветки CheckLists в main
+
+https://github.com/shikulo/First
+
+10) Синхронизировать Внешнюю и Локальную ветки Main
+user@DESKTOP-UUPP9C7 MINGW64 ~/git/first (CheckLists)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+user@DESKTOP-UUPP9C7 MINGW64 ~/git/first (main)
+$ git pull
+remote: Enumerating objects: 4, done.
+remote: Counting objects: 100% (4/4), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 2 (delta 1), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (2/2), 709 bytes | 118.00 KiB/s, done.
+From https://github.com/shikulo/First
+   8d2a3e4..13bc23e  main       -> origin/main
+Updating 8d2a3e4..13bc23e
+Fast-forward
+ structureChL.txt | 6 ++++++
+ 1 file changed, 6 insertions(+)
+ create mode 100644 structureChL.txt
