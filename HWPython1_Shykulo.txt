@@ -1,0 +1,76 @@
+#1) Создать переменную типа String
+string_ = str('Alex')
+print(type(string_), string_)
+#2) Создать переменную типа Integer
+integer_ = int(27)
+print(type(integer_), integer_)
+#3) Создать переменную типа Float
+float_ = float(36.6)
+print(type(float_), float_)
+#4) Создать переменную типа Bytes
+# Размер байтовой строки от 0 до 255
+bytes_ = bytes([27, 28, 29])
+print(type(bytes_), bytes_)
+bytes1 = bytes(27)
+print(type(bytes1), bytes1)
+#5) Создать переменную типа List
+list_ = list([string_, integer_, bytes1])
+print(type(list_), list_)
+#6) Создать переменную типа Tuple
+tuple_ = tuple((27, string_, 36.6,'Vika'))
+print(type(tuple_), tuple_)
+#7) Создать переменную типа Set
+set_ = set({27, string_, 36.6})
+print(type(set_), set_)
+#8. Создать переменную типа Frozen set
+frozenset_ = frozenset('Alex')
+print(type(frozenset_), frozenset_)
+#9) Создать переменную типа Dict
+dict_ = dict({'value':123, 'key':'abc'})
+print(type(dict_), dict_)
+#10) Вывести в консоль все выше перечисленные переменные с добавлением типа данных.
+print((type(string_), string_), (type(integer_), integer_), (type(float_), float_), (type(bytes_), bytes_), (type(list_), list_), (type(tuple_), tuple_), (type(set_), set_), (type(frozenset_), frozenset_), (type(dict_), dict_), sep=", ")
+#11) Создать 2 переменные String, создать переменную в которой сканкатенируете эти переменные. Вывести в консоль.
+a = 'Hello'
+b = ' Alex'
+c = a + b
+print(c)
+#12) Вывести в одну строку переменные типа String и Integer используя “,” (Запятую)
+print(string_, integer_, sep = '_')
+#13) Вывести в одну строку переменные типа String и Integer используя “+” (Плюс)
+age = str(integer_)
+print(string_ + age)
+
+#Зарезервированные слова
+#False	ложь
+#True	правда
+#None	«пустой» объект
+#and	логическое И
+#with / as	менеджер контекста
+#assert условие	возбуждает исключение, если условие ложно
+#break	выход из цикла
+#class	пользовательский тип, состоящий из методов и атрибутов
+#continue	переход на следующую итерацию цикла
+#def	определение функции
+#del	удаление объекта
+#elif	в противном случае, если
+#else	иначе
+#except	перехватить исключение
+#finally	вместе с инструкцией try, выполняет инструкции независимо от того, было ли исключение или нет
+#for	цикл for
+#from	импорт нескольких функций из модуля
+#global	позволяет сделать значение переменной, присвоенное ей внутри функции, доступным и за пределами этой функции
+#if	если
+#import	импорт модуля
+#in	проверка на вхождение
+#is	ссылаются ли 2 объекта на одно и то же место в памяти
+#lambda	определение анонимной функции
+#nonlocal	позволяет сделать значение переменной, присвоенное ей внутри функции, доступным в объемлющей инструкции
+#not	логическое НЕ
+#or	логическое ИЛИ
+#pass	ничего не делающая конструкция
+#raise	возбудить исключение
+#return	вернуть результат
+#try	выполнить инструкции, перехватывая исключения
+#while	цикл while
+#yield	определение функции-генератора
