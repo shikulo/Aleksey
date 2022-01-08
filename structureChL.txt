@@ -1,7 +1,0 @@
-Сheck:           | Result:  | Сomment: |
-1)Block          |          |          |
-1.1              |Passed    |          |
-1.2		 |Failed    |          |
-1.3              |Blocked   |          |
-1.4		 |Skipped   |          |
-1.5		 |Not run   |          |
