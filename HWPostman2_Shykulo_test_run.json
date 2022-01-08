@@ -1,0 +1,353 @@
+{
+	"id": "84dedf6d-fbe6-40f4-ab28-9d8703da6daf",
+	"name": "Alex2",
+	"timestamp": "2022-01-08T10:53:40.464Z",
+	"collection_id": "17623167-8028ca4c-c9eb-461c-91fe-6f57728ad120",
+	"folder_id": 0,
+	"environment_id": "875ef7a9-871f-47fe-941c-db6fd23607ea",
+	"totalPass": 39,
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "08aa77dd-39a7-4c1d-ba40-4c91fd6ac7e7",
+			"name": "first",
+			"url": "http://162.55.220.72:5005/first",
+			"time": 108,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Body matches string": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Body matches string": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				108
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Body matches string": true
+				}
+			]
+		},
+		{
+			"id": "498f7112-7271-479d-bfb4-1ea8c8001494",
+			"name": "user_info_3",
+			"url": "http://162.55.220.72:5005/user_info_3",
+			"time": 116,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Your test name": true,
+				"Your test age": true,
+				"Your test salary": true,
+				"Name from response is equal to specified name": true,
+				"Name from response is equal to specified age": true,
+				"Name from response is equal to specified salary": true,
+				"salary from response is equal to specified u_salary_1_5_year": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Your test name": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Your test age": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Your test salary": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Name from response is equal to specified name": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Name from response is equal to specified age": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Name from response is equal to specified salary": {
+					"pass": 1,
+					"fail": 0
+				},
+				"salary from response is equal to specified u_salary_1_5_year": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				116
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Your test name": true,
+					"Your test age": true,
+					"Your test salary": true,
+					"Name from response is equal to specified name": true,
+					"Name from response is equal to specified age": true,
+					"Name from response is equal to specified salary": true,
+					"salary from response is equal to specified u_salary_1_5_year": true
+				}
+			]
+		},
+		{
+			"id": "ffa989b6-ff75-4012-908f-ff0848bee58f",
+			"name": "object_info_3",
+			"url": "http://162.55.220.72:5005/object_info_3?name=Alex&age=27&salary=1500",
+			"time": 106,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Name from response is equal to specified name": true,
+				"Dog's age is 4": true,
+				"Dog's name is Luky": true,
+				"the Dog has a name": true,
+				"the Dog has an age": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Name from response is equal to specified name": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Dog's age is 4": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Dog's name is Luky": {
+					"pass": 1,
+					"fail": 0
+				},
+				"the Dog has a name": {
+					"pass": 1,
+					"fail": 0
+				},
+				"the Dog has an age": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				106
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Name from response is equal to specified name": true,
+					"Dog's age is 4": true,
+					"Dog's name is Luky": true,
+					"the Dog has a name": true,
+					"the Dog has an age": true
+				}
+			]
+		},
+		{
+			"id": "2f4faa01-0f9c-4331-b4fd-4dc25c1418d7",
+			"name": "object_info_4",
+			"url": "http://162.55.220.72:5005/object_info_4?name=Alex&age=27&salary=1500",
+			"time": 103,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Name from response is equal to specified name": true,
+				"Age from response is equal to specified age": true,
+				"salary from response is equal to specified u_salary_1_5_year": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Name from response is equal to specified name": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Age from response is equal to specified age": {
+					"pass": 1,
+					"fail": 0
+				},
+				"salary from response is equal to specified u_salary_1_5_year": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				103
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Name from response is equal to specified name": true,
+					"Age from response is equal to specified age": true,
+					"salary from response is equal to specified u_salary_1_5_year": true
+				}
+			]
+		},
+		{
+			"id": "b9c11ef3-1f76-4eb3-810d-a8876d47ebdc",
+			"name": "user_info_2",
+			"url": "http://162.55.220.72:5005/user_info_2",
+			"time": 97,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"response have parameter_start_qa_salary": true,
+				"response have parameter_qa_salary_after_6_months": true,
+				"response have parameter_qa_salary_after_12_months": true,
+				"response have parameter_qa_salary_after_1.5_year": true,
+				"response have parameter_qa_salary_after_3.5_years": true,
+				"response have parameter_person": true,
+				"start_qa_salary=salary_request ": true,
+				"qa_salary_after_6_months=salary_request*2 ": true,
+				"qa_salary_after_12_months=salary_request*2.7 ": true,
+				"qa_salary_after_1.5_year=salary_request*3.3 ": true,
+				"qa_salary_after_3.5_years=salary_request*3.8 ": true,
+				"person.u_name=salary_request ": true,
+				"person.u_age=age_request ": true,
+				"u_salary_5_years=salary_request*4.2 ": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"response have parameter_start_qa_salary": {
+					"pass": 1,
+					"fail": 0
+				},
+				"response have parameter_qa_salary_after_6_months": {
+					"pass": 1,
+					"fail": 0
+				},
+				"response have parameter_qa_salary_after_12_months": {
+					"pass": 1,
+					"fail": 0
+				},
+				"response have parameter_qa_salary_after_1.5_year": {
+					"pass": 1,
+					"fail": 0
+				},
+				"response have parameter_qa_salary_after_3.5_years": {
+					"pass": 1,
+					"fail": 0
+				},
+				"response have parameter_person": {
+					"pass": 1,
+					"fail": 0
+				},
+				"start_qa_salary=salary_request ": {
+					"pass": 1,
+					"fail": 0
+				},
+				"qa_salary_after_6_months=salary_request*2 ": {
+					"pass": 1,
+					"fail": 0
+				},
+				"qa_salary_after_12_months=salary_request*2.7 ": {
+					"pass": 1,
+					"fail": 0
+				},
+				"qa_salary_after_1.5_year=salary_request*3.3 ": {
+					"pass": 1,
+					"fail": 0
+				},
+				"qa_salary_after_3.5_years=salary_request*3.8 ": {
+					"pass": 1,
+					"fail": 0
+				},
+				"person.u_name=salary_request ": {
+					"pass": 1,
+					"fail": 0
+				},
+				"person.u_age=age_request ": {
+					"pass": 1,
+					"fail": 0
+				},
+				"u_salary_5_years=salary_request*4.2 ": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				97
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"response have parameter_start_qa_salary": true,
+					"response have parameter_qa_salary_after_6_months": true,
+					"response have parameter_qa_salary_after_12_months": true,
+					"response have parameter_qa_salary_after_1.5_year": true,
+					"response have parameter_qa_salary_after_3.5_years": true,
+					"response have parameter_person": true,
+					"start_qa_salary=salary_request ": true,
+					"qa_salary_after_6_months=salary_request*2 ": true,
+					"qa_salary_after_12_months=salary_request*2.7 ": true,
+					"qa_salary_after_1.5_year=salary_request*3.3 ": true,
+					"qa_salary_after_3.5_years=salary_request*3.8 ": true,
+					"person.u_name=salary_request ": true,
+					"person.u_age=age_request ": true,
+					"u_salary_5_years=salary_request*4.2 ": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 530,
+	"collection": {
+		"requests": [
+			{
+				"id": "08aa77dd-39a7-4c1d-ba40-4c91fd6ac7e7",
+				"method": "GET"
+			},
+			{
+				"id": "498f7112-7271-479d-bfb4-1ea8c8001494",
+				"method": "POST"
+			},
+			{
+				"id": "ffa989b6-ff75-4012-908f-ff0848bee58f",
+				"method": "GET"
+			},
+			{
+				"id": "2f4faa01-0f9c-4331-b4fd-4dc25c1418d7",
+				"method": "GET"
+			},
+			{
+				"id": "b9c11ef3-1f76-4eb3-810d-a8876d47ebdc",
+				"method": "POST"
+			}
+		]
+	}
+}
