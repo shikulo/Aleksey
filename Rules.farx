@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<AutoResponder LastSave="2021-12-01T18:44:41.9801609+03:00" FiddlerVersion="5.0.1.0">
+  <State Enabled="true" AcceptAllConnects="false" Fallthrough="true" UseLatency="false">
+    <ResponseRule Match="{&quot;matchCondition&quot;:1,&quot;matches&quot;:[&quot;^^NA==*Y29udGFpbnM=*MTYyLjU1LjIyMC43Mg==&quot;]}" Action="[&quot;^^Ng==**cmVwbGFjZQ==*Mjc=*MTAw&quot;]" Comment="gr23_1" Enabled="false" />
+    <ResponseRule Match="{&quot;matchCondition&quot;:1,&quot;matches&quot;:[&quot;^^NA==*Y29udGFpbnM=*MTYyLjU1LjIyMC43Mg==&quot;]}" Action="[&quot;^^Nw==*bmFtZQ==*c2V0**VmljdG9yaWE=&quot;]" Comment="gr23_2" Enabled="false" />
+    <ResponseRule Match="{&quot;matchCondition&quot;:1,&quot;matches&quot;:[&quot;^^NA==*Y29udGFpbnM=*MTYyLjU1LjIyMC43Mg==&quot;]}" Action="[&quot;^^Nw==*bmFtZQ==*cmVwbGFjZQ==*Yw==*aw==&quot;]" Comment="gr23_2_1" Enabled="false" />
+    <ResponseRule Match="{&quot;matchCondition&quot;:1,&quot;matches&quot;:[&quot;^^NA==*Y29udGFpbnM=*MTYyLjU1LjIyMC43Mg==&quot;]}" Action="[&quot;^^Ng==**cmVwbGFjZQ==*d2VpZ2h0*eWVhcnM=&quot;]" Comment="gr23_3" Enabled="false" />
+    <ResponseRule Match="{&quot;matches&quot;:[&quot;^^NA==*Y29udGFpbnM=*MTYyLjU1LjIyMC43Mg==&quot;],&quot;matchCondition&quot;:1}" Action="[&quot;^^NQ==**cmVwbGFjZQ==*ZGFpbHlfc2xlZXA=*UUE=&quot;]" Comment="gr23_4" Enabled="false" />
+    <ResponseRule Match="{&quot;matches&quot;:[&quot;^^NA==*Y29udGFpbnM=*c2Ftc3VuZw==&quot;],&quot;matchCondition&quot;:1}" Action="[&quot;^^Ng==**cmVwbGFjZQ==*c2Ftc3VuZw==*YXBwbGU=&quot;]" Comment="Onliner_Samsung" Enabled="true" />
+  </State>
+</AutoResponder>
