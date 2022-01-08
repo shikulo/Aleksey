@@ -1,0 +1,329 @@
+
+  1. Отобразить подключённый девайс в консоли.
+ Устанавливаем SDK Platform Tools 
+ Заходим в командную строку и прописываем: C:\Users\user>adb devices
+ отображается наш девайс:
+* daemon not running; starting now at tcp:5037
+* daemon started successfully
+List of devices attached
+68adb4bf        device
+ 2. Установить .apk файл приложениия todolist на телефон с компьютера через  ADB
+C:\Users\user>adb install C:\Users\user\Desktop\TodoList\001_ToDoList-master\app\build\outputs\apk\debug\app-debug.apk
+Performing Push Install
+C:\Users\user\Desktop\TodoList\001_ToDoList-master\app\bui...le pushed, 0 skipped. 174.9 MB/s (3722645 bytes in 0.020s)
+        pkg: /data/local/tmp/app-debug.apk
+Success
+ 3. Запускаем оболочку "shell", Android консоль
+ C:\Users\user>adb shell pm list packages
+package:com.monotype.android.font.rosemary
+package:com.sec.android.app.DataCreate
+package:com.sec.android.providers.mapcon
+package:com.skype.raider
+package:com.gd.mobicore.pa
+package:com.sec.android.widgetapp.samsungapps
+package:com.google.android.youtube
+package:com.samsung.android.app.galaxyfinder
+package:com.samsung.android.themestore
+package:com.sec.android.app.chromecustomizations
+package:com.android.providers.telephony
+package:com.sec.android.app.parser
+package:com.sec.android.providers.iwlansettings
+package:sinet.startup.inDriver
+package:com.google.android.googlequicksearchbox
+package:com.vkontakte.android
+package:com.android.providers.calendar
+package:com.alibaba.aliexpresshd
+package:com.osp.app.signin
+package:com.sec.automation
+package:com.android.providers.media
+package:com.google.android.onetimeinitializer
+package:com.shazam.android
+package:com.android.wallpapercropper
+package:com.skms.android.agent
+package:com.sec.android.app.safetyassurance
+package:com.sec.factory.camera
+package:com.viber.voip
+package:org.simalliance.openmobileapi.service
+package:com.sec.usbsettings
+package:com.samsung.android.easysetup
+package:com.android.documentsui
+package:com.dc.hwsj
+package:com.android.externalstorage
+package:com.sec.android.easyonehand
+package:com.android.todolist
+package:com.sec.factory
+package:com.android.htmlviewer
+package:com.android.mms.service
+package:by.st.priormobile
+package:com.sec.android.wallpapercropper2
+package:com.android.providers.downloads
+package:com.qualcomm.qti.auth.sampleauthenticatorservice
+package:ru.mts.mymts
+package:com.sec.android.easyMover.Agent
+package:com.samsung.ucs.agent.boot
+package:com.wsomacp
+package:com.sec.android.Kies
+package:at.xylem.mapin
+package:com.samsung.faceservice
+package:com.qapp.secprotect
+package:com.sec.android.app.voicenote
+package:com.sec.android.app.easylauncher
+package:com.samsung.knox.rcp.components
+package:com.naminsk
+package:com.monotype.android.font.foundation
+package:com.sec.android.widgetapp.easymodecontactswidget
+package:com.samsung.android.email.provider
+package:com.samsung.android.intelligenceservice2
+package:com.sec.di.SmartSelfShot
+package:com.samsung.android.MtpApplication
+package:com.sec.android.app.factorykeystring
+package:com.sec.android.app.samsungapps
+package:com.sec.android.emergencymode.service
+package:com.google.android.configupdater
+package:com.sec.android.app.wlantest
+package:com.microsoft.office.excel
+package:com.sec.android.app.billing
+package:com.sec.android.app.minimode.res
+package:by.oz.android
+package:com.android.defcontainer
+package:by.mts.client
+package:com.sec.android.daemonapp
+package:com.sec.enterprise.knox.attestation
+package:com.android.vending
+package:com.android.pacprocessor
+package:com.dsi.ant.service.socket
+package:com.sec.android.app.popupuireceiver
+package:com.sec.android.AutoPreconfig
+package:com.microsoft.skydrive
+package:com.samsung.android.SettingsReceiver
+package:com.sec.android.app.soundalive
+package:com.sec.android.providers.security
+package:com.sec.android.provider.badge
+package:com.android.certinstaller
+package:com.samsung.android.securitylogagent
+package:com.android.carrierconfig
+package:com.google.android.marvin.talkback
+package:com.samsung.android.app.assistantmenu
+package:com.samsung.android.communicationservice
+package:com.samsung.SMT
+package:com.samsung.cmh
+package:android
+package:com.android.contacts
+package:com.samsung.hs20provider
+package:com.samsung.android.sm.devicesecurity
+package:com.dsi.ant.sample.acquirechannels
+package:com.android.mms
+package:com.android.nfc
+package:com.android.stk
+package:com.sec.knox.foldercontainer
+package:com.android.backupconfirm
+package:com.samsung.klmsagent
+package:com.instagram.android
+package:com.samsung.android.app.memo
+package:com.sec.android.app.SecSetupWizard
+package:com.microsoft.office.onenote
+package:com.android.statementservice
+package:com.google.android.gm
+package:ru.yandex.taxi
+package:com.google.android.apps.tachyon
+package:com.sec.android.app.hwmoduletest
+package:com.sec.bcservice
+package:com.android.calendar
+package:com.sec.modem.settings
+package:com.koushikdutta.vysor
+package:com.sec.android.app.sysscope
+package:com.google.android.instantapps.supervisor
+package:com.microsoft.office.outlook
+package:com.sec.android.app.wallpaperchooser
+package:com.samsung.android.providers.context
+package:org.readera
+package:com.sec.android.app.servicemodeapp
+package:com.sec.android.preloadinstaller
+package:com.google.android.setupwizard
+package:com.sec.android.gallery3d
+package:com.android.providers.settings
+package:com.qualcomm.qcom_qmi
+package:com.sec.app.TransmitPowerService
+package:com.android.sharedstoragebackup
+package:com.samsung.android.app.colorblind
+package:com.google.android.music
+package:com.android.printspooler
+package:com.samsung.storyservice
+package:com.android.dreams.basic
+package:com.android.incallui
+package:com.sec.android.omc
+package:com.android.inputdevices
+package:com.sec.esdk.elm
+package:com.qualcomm.qti.auth.securesampleauthservice
+package:com.android.stk2
+package:com.timebucks.surveys
+package:com.samsung.android.app.simplesharing
+package:com.sec.smartcard.manager
+package:com.sec.android.Preconfig
+package:an.osintsev.caesar
+package:com.google.android.apps.docs
+package:com.google.android.apps.maps
+package:eu.livesport.MyScore_ru
+package:com.sec.enterprise.mdm.vpn
+package:com.samsung.android.weather
+package:com.dsi.ant.plugins.antplus
+package:com.microsoft.office.word
+package:com.sec.android.inputmethod
+package:com.sec.android.app.clockpackage
+package:com.sec.android.RilServiceModeApp
+package:com.google.android.webview
+package:com.sec.android.app.simsettingmgr
+package:com.microsoft.office.powerpoint
+package:com.sec.enterprise.knox.myknoxsetupwizard
+package:com.android.server.telecom
+package:com.google.android.syncadapters.contacts
+package:com.android.keychain
+package:com.android.chrome
+package:com.samsung.android.asksmanager
+package:com.LostByteGames.uLexicon
+package:com.samsung.android.themecenter
+package:com.google.android.packageinstaller
+package:com.samsung.android.sm
+package:com.google.android.gms
+package:com.google.android.gsf
+package:com.google.android.tts
+package:com.android.calllogbackup
+package:com.google.android.partnersetup
+package:com.sec.android.diagmonagent
+package:com.google.android.videos
+package:com.sec.spp.push
+package:com.dsi.ant.server
+package:com.sec.android.app.myfiles
+package:com.android.proxyhandler
+package:com.samsung.android.allshare.service.fileshare
+package:com.sec.android.mimage.photoretouching
+package:com.sec.android.app.launcher
+package:com.qti.backupagent
+package:flipboard.boxer.app
+package:com.google.android.feedback
+package:com.google.android.apps.photos
+package:com.google.android.syncadapters.calendar
+package:com.android.managedprovisioning
+package:com.splendapps.vox
+package:com.sec.android.providers.tasks
+package:com.sec.android.app.sbrowser
+package:com.monotype.android.font.chococooky
+package:com.android.dreams.phototable
+package:com.vetusmaps.vetusmaps
+package:com.sec.android.service.health
+package:com.samsung.safetyinformation
+package:com.facebook.katana
+package:com.sec.android.app.ringtoneBR
+package:ru.pikabu.android
+package:com.android.providers.partnerbookmarks
+package:com.google.android.gsf.login
+package:com.cleanmaster.sdk
+package:com.samsung.android.app.accesscontrol
+package:com.android.wallpaper.livepicker
+package:com.samsung.android.beaconmanager
+package:com.sec.enterprise.mdm.services.simpin
+package:com.samsung.ucs.ucspinpad
+package:com.android.apps.tag
+package:com.samsung.android.app.FileShareClient
+package:com.facebook.system
+package:com.sec.android.app.popupcalculator
+package:com.sec.android.soagent
+package:an.osintsev.allcoinrus
+package:com.samsung.android.fmm
+package:com.samsung.android.mdm
+package:com.sec.android.app.shealth
+package:com.sec.phone
+package:com.samsung.knox.appsupdateagent
+package:com.google.android.backuptransport
+package:com.sec.knox.knoxsetupwizardclient
+package:com.cleanmaster.mguard
+package:com.samsung.android.scloud
+package:com.samsung.android.app.soundpicker
+package:com.sec.app.RilErrorNotifier
+package:com.android.bookmarkprovider
+package:com.android.settings
+package:com.sec.android.app.bluetoothtest
+package:com.sec.android.emergencylauncher
+package:com.sec.hearingadjust
+package:com.qualcomm.location
+package:com.samsung.android.dlp.service
+package:com.samsung.android.bbc.bbcagent
+package:com.sec.android.splitsound
+package:com.wssnps
+package:com.samsung.android.app.watchmanagerstub
+package:com.policydm
+package:com.samsung.android.app.FileShareServer
+package:com.android.vpndialogs
+package:com.google.android.talk
+package:com.samsung.dcmservice
+package:com.android.phone
+package:com.android.shell
+package:com.android.providers.userdictionary
+package:com.sec.enterprise.knox.cloudmdm.smdms
+package:com.wssyncmldm
+package:com.android.location.fused
+package:com.samsung.android.sm.provider
+package:com.android.systemui
+package:com.sec.android.app.personalization
+package:com.monotype.android.font.cooljazz
+package:com.android.bluetoothmidiservice
+package:com.facebook.appmanager
+package:com.sec.android.provider.logsprovider
+package:com.samsung.aasaservice
+package:com.sec.android.app.fm
+package:com.sec.android.app.mt
+package:com.sec.android.provider.emergencymode
+package:com.sec.knox.switcher
+package:com.sec.android.app.camera
+package:com.samsung.android.tzdata.update_M
+package:com.android.bluetooth
+package:com.qualcomm.timeservice
+package:com.qualcomm.atfwd
+package:com.qualcomm.embms
+package:com.android.providers.contacts
+package:com.sec.android.widgetapp.webmanual
+package:com.samsung.sec.android.application.csc
+package:com.android.captiveportallogin
+package:com.samsung.upsmtheme
+package:com.samsung.android.coreapps
+package:com.samsung.android.video
+package:com.samsung.location
+
+ 4. Вывести адрес приложения todolist в системе Android
+ C:\Users\user>adb shell pm list "packages | grep todolist"
+package:com.android.todolist
+
+ 5. Удалить приложение todolist с телефона через ADB
+ C:\Users\user>adb shell pm uninstall com.android.todolist
+Success
+
+ 6. Сделать скриншот.
+C:\Users\user>adb shell screencap /sdcard/screen.png
+
+ 7. Скопировать скриншот на компьютер.
+C:\Users\user>adb pull /sdcard/screen.png /Users/user/Pictures/screen_group23.png
+/sdcard/screen.png: 1 file pulled, 0 skipped. 7.4 MB/s (516336 bytes in 0.067s)
+
+ 8. Сделать скриншот и сразу скопировать на компьютер в одной команде.
+ C:\Users\user>adb shell screencap /sdcard/screen1.png && adb pull /sdcard/screen1.png /Users/user/Pictures/screen_group23.png
+ 
+ 9. Вывести в консоль логи приложения todolist:
+ C:\Users\user>adb logcat
+ -что бы остановить комбинация Ctrl+C
+ отфильтруем логи нашего приложения todolist:
+ C:\Users\user>adb logcat | findstr -rnw "todolist"
+ -проработаем нужные логи и сохраним на компьютер:
+ C:\Users\user>adb logcat | findstr -rnw "todolist" > log_todolist.log
+ обнулить буффер логов:
+ C:\Users\user>adb logcat -c
+ 
+ 10. Backup:
+ C:\Users\user>adb backup -apk -shared -all -f /Users/user/Pictures/backup.ad 
+  C:\Users\user>adb restore /Users/user/Pictures/backup.ad 
+  
+ 11. Подключение через wifi:
+ C:\Users\user>adb tcpip 5555
+restarting in TCP mode port: 5555
+
+ C:\Users\user>adb connect 192.168.100.3:5555
+connected to 192.168.100.3:5555

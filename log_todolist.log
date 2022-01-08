@@ -1,0 +1,51 @@
+3724:11-15 13:49:51.170  2796  2796 I Timeline: Timeline: Activity_launch_request id:com.android.todolist time:29960864
+3728:11-15 13:49:51.170  1786  2827 V WindowManager: addAppToken: AppWindowToken{b240c6b token=Token{c69c5ba ActivityRecord{a1e66e5 u0 com.android.todolist/.MainActivity t62}}} to stack=1 task=62 at 0
+3744:11-15 13:49:51.210 24410 24410 W SELinux : SELinux: seapp_context_lookup: seinfo=default, level=s0:c512,c768, pkgname=com.android.todolist 
+3747:11-15 13:49:51.210  1786  5167 I ActivityManager: Start proc 24410:com.android.todolist/u0a236 for activity com.android.todolist/.MainActivity
+3748:11-15 13:49:51.230  1786  1998 V WindowStateAnimator: Finishing drawing window Window{f39de3 u0 d0 Starting com.android.todolist}: mDrawState=DRAW_PENDING
+3753:11-15 13:49:51.250  1786  1811 D ActivityManager:  Launching com.android.todolist, updated priority
+3754:11-15 13:49:51.250  1786  1992 V MARsPolicyManager: updatePackagesScore PackageInfo name -- com.android.todolist
+3755:11-15 13:49:51.260  1786  1993 D StatusBarManagerService: manageDisableList userId=0 what=0x0 pkg=Window{f39de3 u0 d0 Starting com.android.todolist}
+3758:11-15 13:49:51.280 24410 24410 W System  : ClassLoader referenced unknown path: /data/app/com.android.todolist-1/lib/arm
+3798:11-15 13:49:51.740  1786  2374 V WindowStateAnimator: Finishing drawing window Window{9f116a u0 d0 com.android.todolist/com.android.todolist.MainActivity}: mDrawState=DRAW_PENDING
+3802:11-15 13:49:51.750  1786  1998 I ActivityManager: Displayed com.android.todolist/.MainActivity: +555ms
+3804:11-15 13:49:51.750  1786  1998 I Timeline: Timeline: Activity_windows_visible id: ActivityRecord{a1e66e5 u0 com.android.todolist/.MainActivity t62} time:29961442
+3813:11-15 13:49:51.760  1786  2370 V WindowStateAnimator: Finishing drawing window Window{9f116a u0 d0 com.android.todolist/com.android.todolist.MainActivity}: mDrawState=HAS_DRAWN
+4769:11-15 13:54:51.500 24410 24410 V ActivityThread: updateVisibility : ActivityRecord{3697ab token=android.os.BinderProxy@122d751 {com.android.todolist/com.android.todolist.MainActivity}} show : true
+4930:11-15 13:54:52.030 24410 24410 V ActivityThread: updateVisibility : ActivityRecord{3697ab token=android.os.BinderProxy@122d751 {com.android.todolist/com.android.todolist.MainActivity}} show : false
+5294:11-15 13:54:53.050  1786  2831 D PackageManager: getComponentMetadataForIconTray : com.android.todolist.MainActivity does not exist in mServices
+5295:11-15 13:54:53.050  1786  2831 D PackageManager: getComponentMetadataForIconTray : com.android.todolist.MainActivity does not exist in mProviders
+5296:11-15 13:54:53.050  1786  2831 D PackageManager: getComponentMetadataForIconTray : com.android.todolist.MainActivity does not exist in mReceivers
+5297:11-15 13:54:53.050  2476  2476 I ApplicationPackageManager: load=com.android.todolist, bg=96-96, dr=96-96
+6169:11-15 13:55:12.950  1786  2374 D ActivityManager:  Launching com.android.todolist, updated priority
+6176:11-15 13:55:12.970  1786  1992 V MARsPolicyManager: updatePackagesScore PackageInfo name -- com.android.todolist
+6190:11-15 13:55:13.020  1786  2951 V WindowStateAnimator: Finishing drawing window Window{9f116a u0 d0 com.android.todolist/com.android.todolist.MainActivity}: mDrawState=DRAW_PENDING
+6194:11-15 13:55:13.030  1786  1993 D StatusBarManagerService: manageDisableList userId=0 what=0x0 pkg=Window{9f116a u0 d0 com.android.todolist/com.android.todolist.MainActivity}
+6199:11-15 13:55:13.350  1786  1998 I Timeline: Timeline: Activity_windows_visible id: ActivityRecord{a1e66e5 u0 com.android.todolist/.MainActivity t62} time:30283046
+6258:11-15 13:55:13.680  1786  3432 I WindowManager: Screenshot max retries 4 of Token{c69c5ba ActivityRecord{a1e66e5 u0 com.android.todolist/.MainActivity t62}} appWin=Window{9f116a u0 d0 com.android.todolist/com.android.todolist.MainActivity} drawState=4
+6342:11-15 13:55:13.800 24410 24410 V ActivityThread: updateVisibility : ActivityRecord{3697ab token=android.os.BinderProxy@122d751 {com.android.todolist/com.android.todolist.MainActivity}} show : false
+6359:11-15 13:55:14.170  1786  1811 D ActivityManager:  Launching com.android.todolist, updated priority
+6366:11-15 13:55:14.190  1786  1992 V MARsPolicyManager: updatePackagesScore PackageInfo name -- com.android.todolist
+6387:11-15 13:55:14.230 24410 24410 V ActivityThread: updateVisibility : ActivityRecord{3697ab token=android.os.BinderProxy@122d751 {com.android.todolist/com.android.todolist.MainActivity}} show : true
+6397:11-15 13:55:14.250  1786  3432 V WindowStateAnimator: Finishing drawing window Window{9f116a u0 d0 com.android.todolist/com.android.todolist.MainActivity}: mDrawState=DRAW_PENDING
+6417:11-15 13:55:14.260  1786  1998 I Timeline: Timeline: Activity_windows_visible id: ActivityRecord{a1e66e5 u0 com.android.todolist/.MainActivity t62} time:30283951
+6558:11-15 13:55:15.740  1786  1992 V MARsPolicyManager: updatePackagesScore PackageInfo name -- com.android.todolist
+6831:11-15 13:55:16.100  1786  1993 D StatusBarManagerService: manageDisableList userId=0 what=0x0 pkg=Window{9f116a u0 d0 com.android.todolist/com.android.todolist.MainActivity}
+6885:11-15 13:55:18.820  1786  1993 D StatusBarManagerService: manageDisableList userId=0 what=0x0 pkg=Window{3141081 u0 d0 com.android.todolist/com.android.todolist.MainActivity}
+6894:11-15 13:55:19.060  1786  5167 V WindowStateAnimator: Finishing drawing window Window{3141081 u0 d0 com.android.todolist/com.android.todolist.MainActivity}: mDrawState=DRAW_PENDING
+6900:11-15 13:55:19.090  1786  2830 V WindowStateAnimator: Finishing drawing window Window{3141081 u0 d0 com.android.todolist/com.android.todolist.MainActivity}: mDrawState=HAS_DRAWN
+7603:11-15 13:57:21.300  1786  1993 D StatusBarManagerService: manageDisableList userId=0 what=0x0 pkg=Window{9f116a u0 d0 com.android.todolist/com.android.todolist.MainActivity}
+7612:11-15 13:57:21.320  1786  5167 V MARsPolicyManager: handelAlertToastWindowStarted pkgName = com.android.todolist
+7677:11-15 13:57:36.760  1786  1993 D StatusBarManagerService: manageDisableList userId=0 what=0x0 pkg=Window{aa231e u0 d0 com.android.todolist/com.android.todolist.MainActivity}
+7681:11-15 13:57:36.800  1786  2370 V WindowStateAnimator: Finishing drawing window Window{aa231e u0 d0 com.android.todolist/com.android.todolist.MainActivity}: mDrawState=DRAW_PENDING
+7687:11-15 13:57:36.820  1786  1811 V WindowStateAnimator: Finishing drawing window Window{aa231e u0 d0 com.android.todolist/com.android.todolist.MainActivity}: mDrawState=HAS_DRAWN
+8505:11-15 14:02:37.030 24410 24410 V ActivityThread: updateVisibility : ActivityRecord{3697ab token=android.os.BinderProxy@122d751 {com.android.todolist/com.android.todolist.MainActivity}} show : true
+8513:11-15 14:02:37.050  1786  1993 D StatusBarManagerService: manageDisableList userId=0 what=0x0 pkg=Window{9f116a u0 d0 com.android.todolist/com.android.todolist.MainActivity}
+8666:11-15 14:02:37.510 24410 24410 V ActivityThread: updateVisibility : ActivityRecord{3697ab token=android.os.BinderProxy@122d751 {com.android.todolist/com.android.todolist.MainActivity}} show : false
+8822:11-15 14:02:38.500  1786  3433 D PackageManager: getComponentMetadataForIconTray : com.android.todolist.MainActivity does not exist in mServices
+8823:11-15 14:02:38.500  1786  3433 D PackageManager: getComponentMetadataForIconTray : com.android.todolist.MainActivity does not exist in mProviders
+8824:11-15 14:02:38.500  1786  3433 D PackageManager: getComponentMetadataForIconTray : com.android.todolist.MainActivity does not exist in mReceivers
+8825:11-15 14:02:38.500  2476  2476 I ApplicationPackageManager: load=com.android.todolist, bg=96-96, dr=96-96
+12204:11-15 14:11:08.980  1786  2831 D ActivityManager:  Launching com.android.todolist, updated priority
+12216:11-15 14:11:09.010  1786  1992 V MARsPolicyManager: updatePackagesScore PackageInfo name -- com.android.todolist
+12230:11-15 14:11:09.070  1786  2370 V WindowStateAnimator: Finishing drawing window Window{9f116a u0 d0 com.android.todolist/com.android.todolist.MainAc
