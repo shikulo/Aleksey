@@ -1,0 +1,31 @@
+1)Let's find our device: adb devices 
+2)Monkey sends 400 events randomly: adb shell monkey 400
+3)Display address of "todolist" app in android system: adb shell pm list "packages | grep todolist"
+4)This line of code will perform 500 random operations in our("todolist") application:
+adb shell monkey -p com.android.todolist 500
+5)Specify the interval between events (milliseconds): adb shell monkey --throttle <milliseconds>
+adb shell monkey -v -p com.android.todolist --throttle 1000 100
+6)Set percentage of touch events: --pct-touch <percent>
+adb shell monkey -v -p com.android.todolist --pct-touch 100 100
+7)Trackball events: adb shell monkey --pct-traceball <percent>
+adb shell monkey -v -p com.android.todolist --pct-traceball 70 1000
+8)Set the percentage of main navigation events, enter the top, bottom, left and right of the device: adb shell monkey --pct-nav <percent>
+adb shell monkey -v -p com.android.todolist --pct-nav 50 1000
+9)Set the percentage of major navigation events that are compatible with the middle key, back key, and menu key:
+adb shell monkey --pct-majornav <percent>
+adb shell monkey -v -p com.android.todolist --pct-majornav 50 1000
+10)Set system navigation event percentage, HOME, BACK, dialing and number of keys setting: 
+adb shell monkey --pct-syskeys <percent>
+11)Set the percentage of triggered events An activity that switches between multiple applications: adb shell monkey --pct-appswitch <percent>
+12)Set percentage of infrequent events: 
+adb shell monkey --pct-anyevent <percent>
+13)During the execution of monkeys, if the outcome fails, the process will be aborted and not implemented: 
+adb shell monkey --ignore-crashes <event-count>
+14)Ignore timeout events. As with a crash, if the monkey detects an ANR it will abort as well,
+so we can use this option if we need to ignore the timeout event: 
+adb shell monkey --ignore-timeouts <event-count>
+15)Note that there is a line at the end of the log:
+System appears to have crashed at event 533 of 1000 using seed 1574782034909
+As we said, if we want to repeat the last process, we need to provide a starting value to simulate the last operation.
+Here we can use the seed value 1574782034909 so that the execution process is exactly the same as last time so that we can reproduce ourselves.
+If we want to crash while the monkey is still doing 1000 operations, then we can use --ignore-crashes.
